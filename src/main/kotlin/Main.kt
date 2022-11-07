@@ -8,4 +8,17 @@ fun main(args: Array<String>) {
 
     print("Введите y: ")
     val y = reader.nextInt()
+
+    val result = if ((x > 0) and (y > 0)) {
+        "Первая четверть"
+    } else if ((x < 0) and (y > 0)) {
+        "Вторая четветь"
+    } else if ((x < 0) and (y < 0)) {
+        "Третья четветь"
+    } else if ((x > 0) and (y < 0)) {
+        "Четвёрная четветь"
+    } else {
+        "Неверный ввод"
+    }
+    print(result)
 }
